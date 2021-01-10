@@ -1,0 +1,40 @@
+form {
+    width: 500px;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    max-height: 200px;
+    max-width: 500px;
+}
+
+input,
+textarea {
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 4px rgba(255, 0, 0, 2.5);
+    border: 1px solid rgb(0, 225, 0);
+    border-radius: 10px;
+}
+
+::placeholder {
+    color: blue;
+    opacity: 1;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+body {
+    background-color: #9B7CF5;
+}
