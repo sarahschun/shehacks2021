@@ -2,10 +2,9 @@ function splitString(){
 	var str = "How are you doing today?"; //user input 
 	var res = str.split(" ");
 	for (var x = 0; x < res.length; x++) {
-  		document.getElementById(x);
+  		//document.getElementById(x);
 		res(x) = replaceText();
 	}
-
 }
 
 function replaceText() {
@@ -16,10 +15,10 @@ function replaceText() {
 
 //I'm sorry
 
-	if (word.equals("sorry"){
+	if (word.equals("sorry")){
 		word = "thank you";
     console.log(word);
-  } 
+  	} 
 	
 //I think
 	if (word.equals("I think")){
@@ -36,7 +35,7 @@ function replaceText() {
 	//sorry
 	
 	if (word.equals("sorry")){
-		word = "nice catch ";
+		word = "nice catch";
     cosole.log(word);
 	}
 
@@ -45,8 +44,6 @@ function replaceText() {
     word = " ";
   console.log(word);
   }
-  
-  
-  document.getElementById("estimate").innerHTML = "Total cost of your sign: <br> £" + totalCorrect;
-	document.getElementById("prettySign").innerHTML = sign;
+  return word;
+
 }
