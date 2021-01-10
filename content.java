@@ -1,38 +1,42 @@
-
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class content {
 
 	public static void main(String[] args) {
-	//	JFrame frame = new JFrame();
-//		Object result = JOptionPane.showInputDialog(frame, "Enter printer name:");
+	//	new JPanelBackgroundColorTest();
+		JFrame frame = new JFrame();
+		Object result = JOptionPane.showInputDialog(frame, "Enter what you want to say:");
 		//String result = result;
-		String str = "I think this is just a good idea guys"; //user input
-		String result;
-		result = splitString(str);
-		System.out.println(result);
+		String str = String. valueOf(result) ;
+		//String str = "This is just not a good idea guys sorry"; //user input
+		String fin;
+		fin = splitString(str);
+
+		System.out.println(fin);
+		JOptionPane.showMessageDialog (null, fin, "Title", JOptionPane.INFORMATION_MESSAGE);
 
 	}
 
 	public static String splitString(String str){ 
-		  
-		String[] res = str.split(" ");		 
+
+		//String[] res = str.split(" ");
+		String[] res = str.replaceAll("[^a-zA-Z ]", "").split("\\s+");
 
 		for (int x = 0; x < res.length; x++) { 
 			//System.out.println(res[x]);
 			res[x] = replaceText(res[x]); 
-			
 		} 
+
 		String fin = "";
 		for (int x = 0; x < res.length; x++) { 
-			
+
 			if (res[x].equals(" "))
-				fin = fin+res[x] ; 
+				fin = fin; 
 			else
-				fin = fin+ res[x]+" " ; 
+				fin = fin + res[x]+" " ; 
 		} 
-		
+
 		return fin;
 
 	} 
@@ -40,11 +44,10 @@ public class content {
 		if (word.equals("sorry")){ 
 			word = "thank you"; 
 		}  
-		
+
 		//guys -> everyone or y'all 
 		if (word.equals("guys")){ 
 			word = "everyone"; 
-			//System.out.println("aaaa");
 		}  
 		//sorry 
 		if (word.equals("sorry")){ 
@@ -59,11 +62,3 @@ public class content {
 		return word;
 	}
 }
-
-
-
-
-
-
-
-
