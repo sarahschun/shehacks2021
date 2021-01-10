@@ -1,9 +1,12 @@
 function splitString(){
-
+	var str = "How are you doing today?"; //user input 
+	var res = str.split(" ");
+	for (var x = 0; x < res.length; x++) {
+  		document.getElementById(x);
+		res(x) = replaceText();
+	}
 
 }
-
-
 
 function replaceText() {
 
