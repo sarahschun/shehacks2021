@@ -1,17 +1,19 @@
 function splitString(){
-	var str = "How are you doing today?"; //user input 
+
+	var str = "I think this is just a good idea guys."; //user input 
 	var res = str.split(" ");
 	for (var x = 0; x < res.length; x++) {
   		//document.getElementById(x);
 		res(x) = replaceText();
 	}
+	var result = res.toString();
 }
 
 function replaceText() {
 
-	var x = document.getElementById("");
-	var word = x.elements[0].value;
-	var wordLength = word.length;
+//	var x = document.getElementById("");
+//	var word = x.elements[0].value;
+//	var wordLength = word.length;
 
 //I'm sorry
 
